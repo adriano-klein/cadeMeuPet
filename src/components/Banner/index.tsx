@@ -6,9 +6,9 @@ import BannerImage from "../../../public/BannerImage.png";
 export function Banner() {
   return (
     <BannerContainer>
-      <BackgroundImage src={BannerImage} alt="Banner Background" layout="fill" quality={75} />
+      <BackgroundImage src={BannerImage} alt="Banner Background" layout="fill" quality={75} priority />
       <ContentContainer>
-        <Image src={Logo} width={433} height={129} alt="Logo" quality={75} />
+        <Image src={Logo} width={433} height={129} alt="Logo" quality={75} priority />
         <h2>
           Ajudamos você a <br /> <span>encontrar</span> o seu <span>pet</span>!
         </h2>

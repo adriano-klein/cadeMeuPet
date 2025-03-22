@@ -2,12 +2,19 @@ import type { AppProps } from "next/app";
 import { GlobalStyle } from "../styles/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/theme";
+import { Roboto } from 'next/font/google';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const roboto = Roboto({
+  weight: ['200','300','400','500','600', '700','800','900'],
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
+      <SpeedInsights />
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Component {...pageProps} className={roboto.className} />
     </ThemeProvider>
   );
 }
