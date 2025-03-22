@@ -28,12 +28,10 @@ export const BannerContainer = styled.div`
 
 export const BackgroundImage = styled(Image)`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   object-fit: cover;
   z-index: 0;
+  width: 100vw;
+  height: auto;
 `;
 
 export const ContentContainer = styled.div`
