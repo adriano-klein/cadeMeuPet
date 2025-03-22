@@ -4,7 +4,7 @@ export function Communication(){
   return (
     <CommunicationContainer>
       <h2>
-        Comunicamos toso os <br /> voluntários
+        Comunicamos todos os <br /> voluntários
       </h2>
       <p>
         Assim que recebermos todas as informações, enviaremos um e-mail para
