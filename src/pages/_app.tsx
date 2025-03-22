@@ -3,6 +3,7 @@ import { GlobalStyle } from '../styles/globalStyles';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react";
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <SpeedInsights />
+      <Analytics />
       <GlobalStyle />
       <div className={roboto.className}>
         <Component {...pageProps} />
