@@ -6,7 +6,7 @@ export function Banner() {
   return (
     <BannerContainer>
       <ContentContainer>
-        <Image src={Logo} width={433} height={129} alt="Logo" />
+        <Image src={Logo} width={433} height={129} alt="Logo" layout="responsive" quality={70}/>
         <h2>
           Ajudamos você a <br /> <span>encontrar</span> o seu <span>pet</span>!
         </h2>
