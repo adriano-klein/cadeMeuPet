@@ -1,21 +1,44 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export const BannerContainer = styled.div`
+  position: relative;
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.62) 0%,
       rgba(0, 0, 0, 0.62) 100%
-    ),
-    url("/BannerImage.png") lightgray 50% / cover no-repeat;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    );
+    z-index: 1;
+  }
+`;
+
+export const BackgroundImage = styled(Image)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 `;
 
 export const ContentContainer = styled.div`
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +104,11 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const LostAndFoundButton = styled.button`
+interface LostAndFoundButtonProps {
+  variant: 'lost' | 'found';
+}
+
+export const LostAndFoundButton = styled.button<LostAndFoundButtonProps>`
   border: 1px solid ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.primary};
   background: ${(props) => props.theme.colors.secondary};

@@ -1,18 +1,20 @@
 import Image from "next/image";
-import { BannerContainer, ContentContainer, LostAndFoundButton} from "./styles";
+import { BannerContainer, BackgroundImage, ContentContainer, LostAndFoundButton } from "./styles";
 import Logo from "../../../public/Logo2.png";
+import BannerImage from "../../../public/BannerImage.png";
 
 export function Banner() {
   return (
     <BannerContainer>
+      <BackgroundImage src={BannerImage} alt="Banner Background" layout="fill" quality={75} />
       <ContentContainer>
-        <Image src={Logo} width={433} height={129} alt="Logo" layout="responsive" quality={70}/>
+        <Image src={Logo} width={433} height={129} alt="Logo" quality={75} />
         <h2>
           Ajudamos você a <br /> <span>encontrar</span> o seu <span>pet</span>!
         </h2>
         <span>
-          <LostAndFoundButton>Encontrei</LostAndFoundButton>
-          <LostAndFoundButton>Perdi</LostAndFoundButton>
+          <LostAndFoundButton variant="lost">Encontrei</LostAndFoundButton>
+          <LostAndFoundButton variant="found">Perdi</LostAndFoundButton>
         </span>
         <p>
           Uma comunidade que ama os animais e que juntam forças para <br />
