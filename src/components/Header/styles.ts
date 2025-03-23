@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
 
   @media (max-width: 768px) {
     gap: 1rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
 
     img {
       width: 6rem;

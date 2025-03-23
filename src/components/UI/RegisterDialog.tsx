@@ -59,6 +59,10 @@ const RegisterButton = styled.button`
     font-weight: bold;
     transition: font-weight 0.5s;
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 2rem;
+  }
 `;
 
 const RegisterDialog = () => (

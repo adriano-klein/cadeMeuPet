@@ -49,13 +49,18 @@ const Input = styled.input`
 `;
 
 const DialogButton = styled.button`
-  padding: 0.5rem 4rem;
-  border: 1px solid ${props => props.theme.colors.primary};
+  padding: 0.5rem 2rem; // Reduza o padding horizontal de 4rem para 2rem
+  border: 1px solid ${(props) => props.theme.colors.primary};
   border-radius: 4px;
-  color: ${props => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.secondary};
   cursor: pointer;
   background-color: transparent;
-  
+  white-space: nowrap; // Impede que o texto quebre
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem; // Reduz ainda mais em telas pequenas
+  }
+
   &:hover {
     font-weight: bold;
     transition: font-weight 0.5s;
