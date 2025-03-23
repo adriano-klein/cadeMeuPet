@@ -1,5 +1,6 @@
 import { Card } from "../Cards";
 import { HowItWorksContainer, CardsContainer } from "./styles";
+import { Gear, UsersFour, MapPin } from "phosphor-react";
 
 export function HowItWorks() {
   return (
@@ -18,6 +19,7 @@ export function HowItWorks() {
         <CardsContainer>
           <Card
             title={"Nossa comunidade"}
+            icon={UsersFour}
             content="Nossa força está na comunidade que construímos entre tutores e pessoas
           engajadas na causa animal por todo o Brasil. Criamos uma rede nacional
           de voluntários que, ao se cadastrarem, informam seu CEP de residência
@@ -26,6 +28,7 @@ export function HowItWorks() {
           />
           <Card
             title="Como funciona"
+            icon={Gear}
             content="Quando um tutor perde seu animal e registra na plataforma o CEP do
           local onde ocorreu o desaparecimento, nosso sistema age imediatamente:
           enviamos alertas por e-mail e SMS para todas as pessoas cadastradas
@@ -34,6 +37,7 @@ export function HowItWorks() {
           />
           <Card
             title="Processo de localização"
+            icon={MapPin}
             content="O processo é simples e eficiente: quando alguém encontra o animal
           desaparecido, comunica diretamente pela plataforma. O tutor é
           notificado imediatamente, recebendo todos os dados sobre a localização

@@ -10,10 +10,10 @@ export const HowItWorksContainer = styled.div`
   h2 {
     color: ${(props) => props.theme.colors.black};
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900 !important;
     line-height: normal;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   span {
@@ -29,9 +29,9 @@ export const HowItWorksContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    h2 {
+    h2:first-child {
       font-size: 3rem;
-      margin-top: 2rem;
+      margin-top: 0;
     }
 
     span {

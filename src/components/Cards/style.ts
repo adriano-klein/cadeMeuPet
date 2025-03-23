@@ -16,4 +16,8 @@ export const CardContainer = styled.div`
     line-height: normal;
     margin-top: 1rem;
   }
+
+  svg {
+    margin: 0 auto;
+  }
 `
