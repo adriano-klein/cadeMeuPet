@@ -11,8 +11,8 @@ export default function Home() {
     <Header />
     <Banner />
     <HowItWorks/>
-    <Lost />
     <Found />
+    <Lost />
     <Communication />
     </>
   );

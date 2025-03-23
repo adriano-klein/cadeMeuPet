@@ -18,6 +18,7 @@ export const HowItWorksContainer = styled.div`
 
   span {
     padding: 2rem 0;
+    text-align: center;
     p {
       color: ${(props) => props.theme.colors.black};
       text-align: center;
