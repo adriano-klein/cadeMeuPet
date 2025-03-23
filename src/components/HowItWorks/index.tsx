@@ -17,7 +17,7 @@ export function HowItWorks() {
         <br />
         <CardsContainer>
           <Card
-            title={"Nossa Comunidade"}
+            title={"Nossa comunidade"}
             content="Nossa força está na comunidade que construímos entre tutores e pessoas
           engajadas na causa animal por todo o Brasil. Criamos uma rede nacional
           de voluntários que, ao se cadastrarem, informam seu CEP de residência
