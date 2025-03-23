@@ -7,11 +7,6 @@ export const HeaderContainer = styled.header`
   align-items: center;
   padding: 1rem 2rem;
 
-  img {
-    width: 10rem;
-    height: 4rem;
-  }
-
   @media (max-width: 768px) {
     gap: 1rem;
     padding: 0.5rem 0;
@@ -34,6 +29,13 @@ export const LoginButton = styled.button`
   padding: 1rem;
   border-radius: 5px;
   width: 9rem;
+
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+      
+    transition: background 0.5s;
+  }
 `;
 
 export const RegisterButton = styled.button`
@@ -43,4 +45,11 @@ export const RegisterButton = styled.button`
   padding: 1rem;
   border-radius: 5px;
   width: 9rem;
+
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background 0.5s;
+  }
 `;
