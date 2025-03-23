@@ -1,6 +1,5 @@
- 
-import * as Dialog from '@radix-ui/react-dialog';
-import styled from 'styled-components';
+import * as Dialog from "@radix-ui/react-dialog";
+import styled from "styled-components";
 
 const DialogOverlay = styled(Dialog.Overlay)`
   background-color: rgba(0, 0, 0, 0.7);
@@ -16,7 +15,7 @@ const DialogContent = styled(Dialog.Content)`
   width: 500px;
   margin: auto;
   position: fixed;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
@@ -44,31 +43,18 @@ const Label = styled.label`
 
 const Input = styled.input`
   padding: 0.5rem;
-  border: 1px solid ${props => props.theme.colors.primary};
+  border: 1px solid ${(props) => props.theme.colors.primary};
   border-radius: 4px;
 `;
 
-const DialogButton = styled.button`
-  padding: 0.5rem 4rem;
-  border: 1px solid ${props => props.theme.colors.primary};
-  border-radius: 4px;
-  color: ${props => props.theme.colors.secondary};
-  cursor: pointer;
-  background-color: transparent;
-  
-  &:hover {
-    font-weight: bold;
-    transition: font-weight 0.5s;
-  }
-`;
 
-const LoginButton = styled.button`
+const RegisterButton = styled.button`
   padding: 0.5rem 4rem;
   border: 1px solid ${(props) => props.theme.colors.primary};
-  border-radius: 4px; 
-  color: ${(props) => props.theme.colors.secondary};
+  border-radius: 4px;
+  color: ${(props) => props.theme.colors.primary};
   cursor: pointer;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.secondary};
 
   &:hover {
     font-weight: bold;
@@ -76,29 +62,39 @@ const LoginButton = styled.button`
   }
 `;
 
-const LoginDialog = () => (
+const RegisterDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <DialogButton>Login</DialogButton>
+      <RegisterButton>Cadastre-se</RegisterButton>
     </Dialog.Trigger>
     <Dialog.Portal>
       <DialogOverlay />
       <DialogContent>
-        <DialogTitle>Login</DialogTitle>
+        <DialogTitle>Registre-se</DialogTitle>
         <Fieldset>
-          <Label htmlFor="name">Digite seu e-mail</Label>
-          <Input id="name"/>
+          <Label htmlFor="name">Seu nome</Label>
+          <Input id="name" type="text"/>
         </Fieldset>
         <Fieldset>
-          <Label htmlFor="username">Digite sua senha</Label>
-          <Input id="username" type='password'/>
+          <Label htmlFor="username">E-mail</Label>
+          <Input id="username" type="email" />
+        </Fieldset>
+
+        <Fieldset>
+          <Label htmlFor="username">Senha</Label>
+          <Input id="username" type="password" />
+        </Fieldset>
+
+        <Fieldset>
+          <Label htmlFor="username">Confirme sua senha</Label>
+          <Input id="username" type="password" />
         </Fieldset>
         <Dialog.Close asChild>
-          <LoginButton aria-label="Close">Entrar</LoginButton>
+          <RegisterButton aria-label="Close">Enviar</RegisterButton>
         </Dialog.Close>
       </DialogContent>
     </Dialog.Portal>
   </Dialog.Root>
 );
 
-export default LoginDialog;
+export default RegisterDialog;
