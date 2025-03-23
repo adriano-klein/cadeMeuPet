@@ -63,6 +63,10 @@ const DialogButton = styled.button`
 
   @media (max-width: 768px) {
     padding: 0.5rem 1rem; // Reduz ainda mais em telas pequenas
+    
+    span {
+      display: none; // Esconda o texto "Login" em telas pequenas
+    }
   }
 
   &:hover {
@@ -89,7 +93,9 @@ const LoginButton = styled.button`
 const LoginDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <DialogButton> <SignIn size={28} /> Login </DialogButton>
+      <DialogButton>
+        <SignIn size={28} /> <span>Login</span>
+      </DialogButton>
     </Dialog.Trigger>
     <Dialog.Portal>
       <DialogOverlay />
@@ -97,11 +103,11 @@ const LoginDialog = () => (
         <DialogTitle>Login</DialogTitle>
         <Fieldset>
           <Label htmlFor="name">Digite seu e-mail</Label>
-          <Input id="name"/>
+          <Input id="name" />
         </Fieldset>
         <Fieldset>
           <Label htmlFor="username">Digite sua senha</Label>
-          <Input id="username" type='password'/>
+          <Input id="username" type="password" />
         </Fieldset>
         <Dialog.Close asChild>
           <LoginButton aria-label="Close">Entrar</LoginButton>

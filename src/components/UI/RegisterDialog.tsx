@@ -65,14 +65,21 @@ const RegisterButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
+
+    span {
+      display: none;
+    }
   }
 `;
 
 const RegisterDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <RegisterButton> <UserPlus size={28} /> Cadastre-se</RegisterButton>
+      <RegisterButton>
+        <UserPlus size={28} />
+        <span>Cadastre-se</span>
+      </RegisterButton>
     </Dialog.Trigger>
     <Dialog.Portal>
       <DialogOverlay />
@@ -80,7 +87,7 @@ const RegisterDialog = () => (
         <DialogTitle>Registre-se</DialogTitle>
         <Fieldset>
           <Label htmlFor="name">Seu nome</Label>
-          <Input id="name" type="text"/>
+          <Input id="name" type="text" />
         </Fieldset>
         <Fieldset>
           <Label htmlFor="username">E-mail</Label>
