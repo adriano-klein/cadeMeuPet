@@ -3,7 +3,7 @@ import { HowItWorksContainer } from "./styles";
 export function HowItWorks() {
   return (
     <HowItWorksContainer>
-      <h2>Como funciona?</h2>
+      <h2>Como funciona</h2>
       <span>
         <p>
           O CadêMeu.pet foi criado pensando em ajudar tutores a encontrarem seus

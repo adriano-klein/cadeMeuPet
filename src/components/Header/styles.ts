@@ -22,34 +22,3 @@ export const ButtonsContainer = styled.span`
   display: flex;
   gap: 1rem;
 `
-
-export const LoginButton = styled.button`
-  border: 2px solid ${(props) => props.theme.colors.primary};
-  background: none;
-  padding: 1rem;
-  border-radius: 5px;
-  width: 9rem;
-
-  &:hover {
-    font-weight: bold;
-    cursor: pointer;
-      
-    transition: background 0.5s;
-  }
-`;
-
-export const RegisterButton = styled.button`
-  border: 2px solid ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.primary};
-  background: ${(props) => props.theme.colors.secondary};
-  padding: 1rem;
-  border-radius: 5px;
-  width: 9rem;
-
-  &:hover {
-    font-weight: bold;
-    cursor: pointer;
-
-    transition: background 0.5s;
-  }
-`;
