@@ -39,3 +39,17 @@ export const HowItWorksContainer = styled.div`
     }
   }
 `;
+
+
+export const CardsContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+`
