@@ -19,7 +19,11 @@ const DialogContent = styled(Dialog.Content)`
   top: 50%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001; /* Ajuste o z-index para garantir que o conteúdo do diálogo fique acima da sobreposição */
+  z-index: 1001;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 const DialogTitle = styled(Dialog.Title)`
