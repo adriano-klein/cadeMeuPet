@@ -1,5 +1,6 @@
  
 import * as Dialog from '@radix-ui/react-dialog';
+import { SignIn } from 'phosphor-react';
 import styled from 'styled-components';
 
 const DialogOverlay = styled(Dialog.Overlay)`
@@ -56,6 +57,9 @@ const DialogButton = styled.button`
   cursor: pointer;
   background-color: transparent;
   white-space: nowrap; // Impede que o texto quebre
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   @media (max-width: 768px) {
     padding: 0.5rem 1rem; // Reduz ainda mais em telas pequenas
@@ -70,10 +74,11 @@ const DialogButton = styled.button`
 const LoginButton = styled.button`
   padding: 0.5rem 1rem;
   border: 1px solid ${(props) => props.theme.colors.primary};
-  border-radius: 4px; 
+  border-radius: 4px;
   color: ${(props) => props.theme.colors.secondary};
   cursor: pointer;
   background-color: ${(props) => props.theme.colors.primary};
+
 
   &:hover {
     font-weight: bold;
@@ -84,7 +89,7 @@ const LoginButton = styled.button`
 const LoginDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <DialogButton>Login</DialogButton>
+      <DialogButton> <SignIn size={28} /> Login </DialogButton>
     </Dialog.Trigger>
     <Dialog.Portal>
       <DialogOverlay />

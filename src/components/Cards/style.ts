@@ -14,7 +14,7 @@ export const CardContainer = styled.div`
     font-size: 2rem !important;
     font-weight: 900;
     line-height: normal;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   svg {

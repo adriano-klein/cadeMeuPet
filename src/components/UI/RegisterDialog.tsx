@@ -1,5 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import styled from "styled-components";
+import { UserPlus } from "phosphor-react";
 
 const DialogOverlay = styled(Dialog.Overlay)`
   background-color: rgba(0, 0, 0, 0.7);
@@ -54,6 +55,9 @@ const RegisterButton = styled.button`
   color: ${(props) => props.theme.colors.primary};
   cursor: pointer;
   background-color: ${(props) => props.theme.colors.secondary};
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   &:hover {
     font-weight: bold;
@@ -68,7 +72,7 @@ const RegisterButton = styled.button`
 const RegisterDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <RegisterButton>Cadastre-se</RegisterButton>
+      <RegisterButton> <UserPlus size={28} /> Cadastre-se</RegisterButton>
     </Dialog.Trigger>
     <Dialog.Portal>
       <DialogOverlay />
