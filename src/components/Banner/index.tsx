@@ -8,7 +8,7 @@ export function Banner() {
     <BannerContainer>
       <BackgroundImage src={BannerImage} alt="Banner Background" quality={75} priority/>
       <ContentContainer>
-        <Image src={Logo} width={300} height={100} alt="Logo" quality={75} priority />
+        <Image src={Logo} width={384} height={114} alt="Logo" quality={75} priority />
         <h2>
           Ajudamos você a <br /> <span>encontrar</span> o seu <span>pet</span>!
         </h2>

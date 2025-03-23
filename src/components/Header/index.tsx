@@ -7,7 +7,7 @@ import RegisterDialog from "../UI/RegisterDialog";
 export default function Header(){
   return (
     <HeaderContainer>
-      <Image src={Logo} alt="Logo" width={140} height={45} />
+      <Image src={Logo} alt="Logo" width={256} height={76} />
       <ButtonsContainer>
         <LoginDialog />
         <RegisterDialog />
