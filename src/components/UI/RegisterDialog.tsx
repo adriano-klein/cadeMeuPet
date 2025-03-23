@@ -47,7 +47,6 @@ const Input = styled.input`
   border-radius: 4px;
 `;
 
-
 const RegisterButton = styled.button`
   padding: 0.5rem 4rem;
   border: 1px solid ${(props) => props.theme.colors.primary};
