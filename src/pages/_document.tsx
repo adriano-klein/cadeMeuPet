@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head title="Cadê meu Pet" lang="pt-BR"/>
         <body>
           <Main />
           <NextScript />
