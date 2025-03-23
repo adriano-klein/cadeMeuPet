@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-title-in-document-head */
 import Document, {
   DocumentContext,
   Html,
@@ -36,8 +37,10 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head title="Cadê meu Pet" lang="pt-BR"/>
+      <Html lang="pt-BR">
+        <Head>
+          <title> Cadê meu Pet </title>
+        </Head>
         <body>
           <Main />
           <NextScript />
