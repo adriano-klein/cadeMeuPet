@@ -31,7 +31,7 @@ export const BackgroundImage = styled(Image)`
   object-fit: cover;
   z-index: 0;
   width: 100vw;
-  height: auto;
+  height: 100vh;
 `;
 
 export const ContentContainer = styled.div`

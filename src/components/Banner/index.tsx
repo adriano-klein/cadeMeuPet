@@ -6,7 +6,7 @@ import BannerImage from "../../../public/BannerImage.png";
 export function Banner() {
   return (
     <BannerContainer>
-      <BackgroundImage src={BannerImage} alt="Banner Background" quality={75} priority/>
+      <BackgroundImage src={BannerImage} alt="Banner Background" quality={75}/>
       <ContentContainer>
         <Image src={Logo} width={384} height={114} alt="Logo" quality={75} priority />
         <h2>
