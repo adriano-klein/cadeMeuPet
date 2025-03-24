@@ -76,7 +76,7 @@ const RegisterButton = styled.button`
 const RegisterDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <RegisterButton>
+      <RegisterButton title="Registre-se">
         <UserPlus size={28} />
         <span>Cadastre-se</span>
       </RegisterButton>

@@ -93,7 +93,7 @@ const LoginButton = styled.button`
 const LoginDialog = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <DialogButton>
+      <DialogButton title='Login'>
         <SignIn size={28} /> <span>Login</span>
       </DialogButton>
     </Dialog.Trigger>
