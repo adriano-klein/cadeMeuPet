@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
     padding: 0.5rem;
 
     img {
-      width: 6rem;
+      width: 6rem; 
       height: 2rem;
     }
   }

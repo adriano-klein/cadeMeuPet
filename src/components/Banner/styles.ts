@@ -26,6 +26,10 @@ export const BannerContainer = styled.div`
   }
 `;
 
+export const TextContainer = styled.div`
+  gap: 0.50rem;
+`
+
 export const BackgroundImage = styled(Image)`
   position: absolute;
   object-fit: cover;
@@ -40,7 +44,7 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 2rem;
 
   h2 {
     color: #fff;
